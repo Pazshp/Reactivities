@@ -1,0 +1,14 @@
+C:\Users\Paz\Reactivities\Application\bin\Debug\netstandard2.0\Application.deps.json
+C:\Users\Paz\Reactivities\Application\bin\Debug\netstandard2.0\Application.dll
+C:\Users\Paz\Reactivities\Application\bin\Debug\netstandard2.0\Application.pdb
+C:\Users\Paz\Reactivities\Application\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\Paz\Reactivities\Application\bin\Debug\netstandard2.0\Persistence.dll
+C:\Users\Paz\Reactivities\Application\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\Paz\Reactivities\Application\bin\Debug\netstandard2.0\Persistence.pdb
+C:\Users\Paz\Reactivities\Application\obj\Debug\netstandard2.0\Application.csprojAssemblyReference.cache
+C:\Users\Paz\Reactivities\Application\obj\Debug\netstandard2.0\Application.AssemblyInfoInputs.cache
+C:\Users\Paz\Reactivities\Application\obj\Debug\netstandard2.0\Application.AssemblyInfo.cs
+C:\Users\Paz\Reactivities\Application\obj\Debug\netstandard2.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\Paz\Reactivities\Application\obj\Debug\netstandard2.0\Application.csproj.CopyComplete
+C:\Users\Paz\Reactivities\Application\obj\Debug\netstandard2.0\Application.dll
+C:\Users\Paz\Reactivities\Application\obj\Debug\netstandard2.0\Application.pdb
