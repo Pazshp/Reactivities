@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pyxT2jAu75ac0k7LXHAt6M5hukZECY5CWcgJ4bxoVlndzQJf682Q0tbEG9fJntPCy5czzQedSe0iF1XfvWyY/g==",
+  "dgSpecHash": "IaAqiE+WQnFlN+lzPw0JZw0bo5K9ixmlobJ55GBxaCphXiYNONruPEXGluTB8wAGQfE5BryTcQtLrMYERxqxXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Paz\\Reactivities\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Paz\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Paz\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Paz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Paz\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Paz\\.nuget\\packages\\microsoft.data.sqlite.core\\3.1.10\\microsoft.data.sqlite.core.3.1.10.nupkg.sha512",

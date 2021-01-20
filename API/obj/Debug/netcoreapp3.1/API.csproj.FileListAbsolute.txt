@@ -65,3 +65,5 @@ C:\Users\Paz\Reactivities\API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primi
 C:\Users\Paz\Reactivities\API\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Paz\Reactivities\API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Paz\Reactivities\API\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Paz\Reactivities\API\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\Paz\Reactivities\API\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
