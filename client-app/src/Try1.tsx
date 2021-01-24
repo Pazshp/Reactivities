@@ -1,15 +1,20 @@
 import axios from 'axios';
 import React, { Component } from 'react'
 import { Icon } from 'semantic-ui-react';
+import { IActivity } from './app/models/activity';
 
-export default class Try1 extends Component {
-    state = {
-        values: []
+interface IState{
+    activities: IActivity[];
+}
+
+export default class Try1 extends Component<{/*props*/},IState> {
+    state : IState = {
+        activities: []
     }
     componentDidMount() {
-        axios.get('http://localhost:5000/api/values')
+        axios.get<IActivity[]>('http://localhost:5000/api/activities')
         .then((response) => {
-            this.setState({values: response.data})
+            this.setState({activities: response.data})
         })
     }
     
@@ -17,8 +22,8 @@ export default class Try1 extends Component {
         return (
             <div>
                 <ul>
-                    {this.state.values.map((value: any) => (
-                        <li key={value.id}>{value.name}</li>
+                    {this.state.activities.map((activity) => (
+                        <li key={activity.id}>{activity.title}</li>
                     ))}
                 </ul>
                 <div>
