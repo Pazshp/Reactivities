@@ -2,7 +2,8 @@ import React, { Fragment, SyntheticEvent, useEffect, useState } from "react";
 import { Container } from "semantic-ui-react";
 import { ActivityDashboard } from "../../features/activities/dashboard/ActivityDashboard";
 import { NavBar } from "../../features/nav/NavBar";
-import agent from "../api/agent";
+// import agent from "../api/agent";
+import { Activities } from "../api/agent";
 import { IActivity } from "../models/activity";
 import { LoadingComponent } from "./LoadingComponent";
 
@@ -26,7 +27,7 @@ const App = () => {
   };
   const handleCreateActivity = (activity: IActivity) => {
     setsubmitting(true);
-    agent.Activities.create(activity)
+    Activities.create(activity)
       .then(() => {
         setActivities([...activities, activity]);
         setSelectedActivity(activity);
@@ -36,7 +37,7 @@ const App = () => {
   };
   const handleEditActivity = (activity: IActivity) => {
     setsubmitting(true);
-    agent.Activities.update(activity)
+    Activities.update(activity)
       .then(() => {
         setActivities([
           ...activities.filter((a) => a.id !== activity.id),
@@ -53,7 +54,7 @@ const App = () => {
   ) => {
     setsubmitting(true);
     setTarget(event.currentTarget.name);
-    agent.Activities.delete(id)
+    Activities.delete(id)
       .then(() => {
         setActivities([...activities.filter((a) => a.id !== id)]);
       })
@@ -61,7 +62,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    agent.Activities.list()
+    Activities.list()
       .then((Response) => {
         let activities: IActivity[] = [];
         Response.forEach((activity) => {
