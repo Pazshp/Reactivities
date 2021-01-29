@@ -1,43 +1,39 @@
-import React from "react";
+import { observer } from "mobx-react-lite";
+import React, { useContext } from "react";
 import { Button, Card, Image } from "semantic-ui-react";
-import { IActivity } from "../../../app/models/activity";
+import ActivityStore from "../../../app/stores/activityStore";
 
-interface IProps {
-  activity: IActivity;
-  setSelectedActivity: (activity: IActivity | null) => void;
-  setEditMode: (b: boolean) => void;
-}
-export const ActivityDetails: React.FC<IProps> = ({
-  activity,
-  setSelectedActivity,
-  setEditMode,
-}) => {
+const ActivityDetails: React.FC = () => {
+  const activityStore = useContext(ActivityStore);
+  const {
+    selectedActivity: activity,
+    openEditForm,
+    cancelSelectedActivity,
+  } = activityStore;
   return (
     <Card fluid>
       <Image
-        src={`/assets/categoryImages/${activity.category}.jpg`}
+        src={`/assets/categoryImages/${activity!.category}.jpg`}
         wrapped
         ui={false}
       />
       <Card.Content>
-        <Card.Header>{activity ? activity.title : "Title"}</Card.Header>
+        <Card.Header>{activity!.title}</Card.Header>
         <Card.Meta>
-          <span>{activity ? activity.date : "Date"}</span>
+          <span>{activity!.date}</span>
         </Card.Meta>
-        <Card.Description>
-          {activity ? activity.description : "Description"}
-        </Card.Description>
+        <Card.Description>{activity!.description}</Card.Description>
       </Card.Content>
       <Card.Content extra>
         <Button.Group widths={2}>
           <Button
-            onClick={() => setEditMode(true)}
+            onClick={() => openEditForm(activity!.id)}
             basic
             color="blue"
             content="Edit"
           />
           <Button
-            onClick={() => setSelectedActivity(null)}
+            onClick={cancelSelectedActivity}
             basic
             color="grey"
             content="Cancel"
@@ -47,3 +43,4 @@ export const ActivityDetails: React.FC<IProps> = ({
     </Card>
   );
 };
+export default observer(ActivityDetails);
